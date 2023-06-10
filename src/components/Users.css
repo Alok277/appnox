@@ -1,0 +1,12 @@
+.custom-modal .ant-modal-content {
+    border-radius: 4px;
+  }
+  
+  .custom-modal .ant-modal-body {
+    padding: 20px;
+  }
+  
+  .custom-modal .ant-modal-dialog {
+    width: 600px !important;
+  }
+  
