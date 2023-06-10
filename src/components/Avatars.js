@@ -55,14 +55,14 @@ const Avatars = (props) => {
             style={{
               width: 300,
               borderRadius: 0,
-              maxHeight:100,              
+                          
               
             }}
             cover={
               <img
                 alt="example"
                 src={`https://avatars.dicebear.com/v2/avataaars/${item.name}.svg?options[mood][]=happy`}
-                style={{ backgroundColor: "rgb(247, 244, 244)" }}
+                style={{ backgroundColor: "#f5f5f5" }}
               />
             }
             actions={[
@@ -70,7 +70,7 @@ const Avatars = (props) => {
                 <div onClick={() => handleLike(item.id)}>
                   <HeartFilled
                     style={{
-                      fontSize: "x-large",
+                      fontSize:  "20px",
                       color: "red",
                       overflow: "hidden",
                     }}
@@ -81,7 +81,7 @@ const Avatars = (props) => {
                   <AiOutlineHeart
                     key="heart"
                     style={{
-                      fontSize: "x-large",
+                      fontSize:  "20px",
                       color: "red",
                       overflow: "hidden",
                     }}
@@ -91,12 +91,12 @@ const Avatars = (props) => {
 
               <EditOutlined
                 key="edit"
-                style={{ fontSize: "x-large" }}
+                style={{ fontSize: "20px" }}
                 onClick={() => editHandle(item)}
               />,
               <DeleteFilled
                 key="delete"
-                style={{ fontSize: "x-large" }}
+                style={{ fontSize: "20px" }}
                 onClick={() => deleteHandle(item.id)}
               />,
             ]}
